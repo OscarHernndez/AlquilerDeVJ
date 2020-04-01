@@ -6,12 +6,12 @@
 
 <section class="story-area left-text center-sm-text">
     <div class="container">
-        <div class="heading"><h3>Elije  tu  VideoJuego F A V O R I TO</h3></div>
+        <div class="heading"><h3>Elije  tu   VideoJuego  F A V O R I T O .</h3></div>
         <div class="row">
-        @foreach (var producto in Model
-            .Take(4)
-            .OrderBy(r => Guid.NewGuid())
-            )
+            @foreach (var producto in Model
+                .Take(4)
+                .OrderBy(r => Guid.NewGuid())
+                )
         {
             <div class="col-lg-3 col-md-4  col-sm-6 ">
                 <div class="center-text mb-30">
@@ -29,11 +29,11 @@
     </div><!-- container -->
 </section>
 
-<section class="story-area bg-seller color-white pos-relative">
+<section class="story-area bg-seller h-50x color-white pos-relative">
     <div class="pos-bottom triangle-up"></div>
     <div class="pos-top triangle-bottom"></div>
     <div class="container">
-        <h4 class="font-30 font-sm-20  center-text mb-25">Selecciona tu<b>VideoJuego</b> y, ordenalo!!</h4>
+        <h4 class="font-30 font-sm-13  center-text mb-30">Selecciona tu <b>VideoJuego</b> y, ordenalo!!</h4>
     </div><!-- container -->
 </section>
 
@@ -43,7 +43,7 @@
         @foreach (var producto in Model)
         {
             <div class="col-md-6">
-                <div class="sided-90x mb-30 ">
+                <div class="sided-150x mb-70">
                     <div class="s-left"><img class="br-3" src="@(ViewBag.adminWebsiteUrl + producto.UrlImagen)" alt="Menu Image"></div><!--s-left-->
                     <div class="s-right">
                         <h5 class="mb-10"><b>@producto.Descripcion</b><b class="color-primary float-right">L @producto.Precio</b></h5>
@@ -61,21 +61,41 @@
         <div class="heading mb-sm-10"><h3>Escoge tu Categoría</h3></div>
         <div class="row">
             <div class="col-md-12 col-lg-6">
-                <div class="sided-220x responsive mb-30 left-text center-sm-text">
-                    <div class="s-left mlr-sm-auto"><img src="~/images/NeedForSpeed-CARRERA.jpg" alt="Menu Image"></div>
+                <div class="sided-200x responsive mb-50 center-ztext center-sm-text">
+                    <div class="s-right mlr-sm-auto"><img src="~/images/NeedForSpeed-CARRERA.jpg" alt="Menu Image"></div>
                     <div class="s-right">
-                        <h5>Carreras</h5>
+                        <h5>CARRERA</h5>
                         <h4 class="mtb-10"><b class="color-primary">L 700.00</b></h4>
                         <p>Maneja a toda velocidad, y siente la adrenalina correr por tu sangre. </p>
                     </div><!--s-right-->
                 </div><!-- sided-90x -->
             </div><!-- col-md-6 -->
             <div class="col-md-12 col-lg-6">
-                <div class="sided-220x responsive mb-30 left-text center-sm-text">
-                    <div class="s-left mlr-sm-auto"><img src="~/images/PlantsVSZombies-AVENTURA.jpg" alt="Menu Image"></div>
+                <div class="sided-200x responsive mb-50 center-text center-sm-text">
+                    <div class="s-right mlr-sm-auto"><img src="~/images/PlantsVSZombies-AVENTURA.jpg" alt="Menu Image"></div>
                     <div class="s-right">
-                        <h5>Aventura</h5>
+                        <h5>AVENTURA</h5>
                         <h4 class="mtb-10"><b class="color-primary">L 980.00</b></h4>
+                        <p>Salva al mundo de la invación Zombie y escoge la planta que mejor vaya contigo. </p>
+                    </div><!--s-right-->
+                </div><!-- sided-90x -->
+            </div><!--col-md-6 -->
+            <div class="col-md-12 col-lg-6">
+                <div class="sided-200x responsive mb-10 center-text center-sm-text">
+                    <div class="s-right mlr-sm-auto"><img src="~/images/Assassins creed-ROL.jpg" alt="Menu Image"></div>
+                    <div class="s-right">
+                        <h5>ROL</h5>
+                        <h4 class="mtb-10"><b class="color-primary">L 900.00</b></h4>
+                        <p>Tus enemigos no durarán mucho, mientras se esconden de tí, tarde o templano los encontrarás. </p>
+                    </div><!--s-right-->
+                </div><!-- sided-90x -->
+            </div><!--col-md-6 -->
+            <div class="col-md-12 col-lg-6">
+                <div class="sided-200x responsive mb-10 center-text center-sm-text">
+                    <div class="s-right mlr-sm-auto"><img src="~/images/FIFA2020-DEPORTE.jpg" alt="Menu Image"></div>
+                    <div class="s-right">
+                        <h5>DEPORTE</h5>
+                        <h4 class="mtb-10"><b class="color-primary">L 1,000.00</b></h4>
                         <p>Salva al mundo de la invación Zombie y escoge la planta que mejor vaya contigo. </p>
                     </div><!--s-right-->
                 </div><!-- sided-90x -->

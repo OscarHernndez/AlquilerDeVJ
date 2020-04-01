@@ -17,7 +17,8 @@ namespace AlquilerVJ.Web.Controllers
             var listadeProductos = productosBL.ObtenerProductosActivos();
 
             ViewBag.adminWebsiteUrl = 
-                ConfigurationManager.AppSettings["adminWebsiteUrl"]; //Me permite leer el valor que esta en Web.Config de .Web y CM-me permite leer el appSettings
+                ConfigurationManager.AppSettings["adminWebsiteUrl"]; //Me permite leer el valor que esta en Web.Config de 
+                                                                     //ext.Web y ConfigManager -me permite leer el appSettings
 
             return View(listadeProductos);
         }
